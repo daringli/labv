@@ -1,0 +1,40 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[swedish,english]{babel}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+
+\begin{document}
+\title{LabVIEW lab uppgift 3}
+\maketitle
+\begin{abtract}
+Förstudien syftar att förbereda undersökningen av ett okänt bandpass filters frekvenskaraktäristik. En funktionsgenerator kopplad till en dator ska automatiskt skicka sinus-signaler av olika frekvenser in i filtret samtidigt som ett oscilloskop läser av amplituden hos utsignalen. För att åstadkomma detta ska vi använda LabVIEW.
+\end{abstract}
+\newpage
+\section{Inledning}
+Ett bandpass filter släpper väll igenom signaler med en frekvens inom frekvensbandet. Ett enkelt sätt att uppmäta ett okänt filters egenskaper är att skicka in signaler av varierande frekvenser och se hur bra filtret släpper igenom dem. 
+\section{Teori}
+Ett bandpass kan beskrivas genom att ge dess frekvens för maximala utamplituden, dess undre- och övregränsfrekvens, definerade enligt ekvation 1, där A_{ut} är amplituden hos utsignalen givet en fixt amplitud hos insignalen och A_{ut}^{max} är den maximala amplituden hos utsignalen givet en fixt amplitud hos insignalen. Givet f_{max} kan undre- och övregränsfrekvens fås genom att ge bandpassfiltrets bandbredd B och Q-faktor Q, definerade enligt ekvation \ref{QB}.
+\begin{equation}
+\begin{split}
+\label{gf}
+A_{ut}(f_{max}) = A_{ut}^{max} \\
+f_{undre} = \frac{A_{ut}^{max}}{\sqrt{2}} f_{undregränsfrekvens}<f_{max} \\
+f_{\"{o}vre} = \frac{A_{ut}^{max}}{\sqrt{2}} f_{övregränsfrekvens}>f_{max}
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\label{QB}
+B &= f_{max}-f_{min} \\
+Q &= f_{max}/B
+\end{split}
+\end{equation}
+
+\section{Uppställning}
+\section{Experimentet}
+\section{Resultat}
+\end{document}
